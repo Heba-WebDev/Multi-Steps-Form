@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import SelectYourPlan from "./components/SelectYourPlan";
+import Navbar from "./components/Navbar";
+import { useEffect, useState } from "react";
 
 function App() {
+
+  let [steps, setSteps] = useState({
+    '1': true,
+    '2': false,
+    '3': false,
+    '4': false,
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full h-screen bg-slate-100 relative">
+      <Navbar steps={steps} setSteps={setSteps}/>
+    <SelectYourPlan />
     </div>
   );
 }
