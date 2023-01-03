@@ -21,7 +21,7 @@ export default function PersonalInfo() {
 
     
     return (
-        <div className='grid h-100'>
+        <div className='grid h-100 border border-solid border-yellow-200  border border-solid border-black'>
             
             <div className='bg-white p-4 -mt-5 w-11/12 m-auto rounded'>
             <h1 className='text-3xl text-blue-800 font-bold'>Personal Info</h1>
@@ -63,7 +63,7 @@ export default function PersonalInfo() {
             
             </div>
            
-           <div className='bg-white absolute inset-x-0 bottom-0 p-4 w-full'>
+           <div className='bg-white p-4 absolute inset-x-0 bottom-0'>
             <div className='w-10/9 grid m-auto'>
             <button className='bg-blue-900 text-white py-2 px-6 rounded justify-self-end'>Next Step</button>
             </div>

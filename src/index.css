@@ -8,3 +8,11 @@
         src: url(./assets/fonts/Ubuntu-Bold.ttf);
     }
   }
+  #root {
+    height: 100vh;
+    position: relative;
+  }
+  body {
+    height: 100vh;
+    background-color: rgb(241 245 249);
+  }

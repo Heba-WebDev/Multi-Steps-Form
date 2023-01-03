@@ -1,4 +1,4 @@
-import SelectYourPlan from "./components/SelectYourPlan";
+import FinishingUp from './components/FinishingUp'
 import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
 
@@ -11,9 +11,9 @@ function App() {
     '4': false,
   });
   return (
-    <div className="w-full h-screen bg-slate-100 relative">
+    <div className="w-full bg-slate-100 h-full ">
       <Navbar steps={steps} setSteps={setSteps}/>
-    <SelectYourPlan />
+      <FinishingUp />
     </div>
   );
 }
